@@ -54,6 +54,12 @@ $(function () {
 
     let slider = $("#reviewsSlider");
 
+    slider.slick({
+        slidesToShow: 1,
+        infinite: true,
+        arrows: false,
+        fade: true
+    });
 
 
 
