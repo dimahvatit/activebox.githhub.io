@@ -390,6 +390,11 @@ p {
     flex-wrap: wrap;
 }
 
+.revies__slider {
+    height: 500px;
+    overflow: hidden;
+}
+
 .reviews__photo {
     width: 50%;
     height: 500px;
@@ -465,7 +470,7 @@ p {
 
 .footer__item {
     width: 33.33333%;
-
+    position: relative;
     text-align: center;
 }
 
@@ -785,4 +790,41 @@ p {
             margin-top: 15%;
         }
     }
+}
+
+/*********MESSAGES*********/
+
+.message__text {
+    background-color: rgba(255, 67, 67, 0.8);
+    color: aliceblue;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    width: 120px;
+    height: 100px;
+}
+
+.footer__message {
+    z-index: 10000;
+    position: absolute;
+    top: -70px;
+    display: none;
+}
+
+.show__message {
+    display: block;
+}
+
+.fb_message {
+    left: 10px;
+}
+
+.tw_message {
+    left: 10px + 43px;
+}
+
+.in_message {
+    left: 10px + 43px + 45px;
 }

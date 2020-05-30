@@ -1,3 +1,4 @@
+"use strict";
 $(function () {
 
     // fixed header \\
@@ -63,5 +64,34 @@ $(function () {
 
 
 
+
+    // кнопка Download \\
+
+    let dwnld = $(".download");
+
+    dwnld.on("click", function (event) {
+        event.preventDefault();
+    })
+
+    // ссылки в footer \\
+
+    let fbBtn = $("#fb"),
+        twBtn = $("#tw"),
+        inBtn = $("#in");
+
+    fbBtn.on("click", function (event) {
+        event.preventDefault();
+        $(".fb_message").toggleClass("show__message");
+    })
+
+    twBtn.on("click", function (event) {
+        event.preventDefault();
+        $(".tw_message").toggleClass("show__message");
+    })
+
+    inBtn.on("click", function (event) {
+        event.preventDefault();
+        $(".in_message").toggleClass("show__message");
+    })
 
 });
