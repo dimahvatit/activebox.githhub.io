@@ -58,7 +58,7 @@ $(function () {
     slider.slick({
         slidesToShow: 1,
         infinite: true,
-        arrows: false,
+        arrows: true,
         fade: true
     });
 
@@ -93,5 +93,4 @@ $(function () {
         event.preventDefault();
         $(".in_message").toggleClass("show__message");
     })
-
 });

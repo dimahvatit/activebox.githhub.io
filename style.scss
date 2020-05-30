@@ -390,11 +390,6 @@ p {
     flex-wrap: wrap;
 }
 
-.revies__slider {
-    height: 500px;
-    overflow: hidden;
-}
-
 .reviews__photo {
     width: 50%;
     height: 500px;
@@ -454,6 +449,47 @@ p {
     text-transform: uppercase;
 
     margin-bottom: 40px;
+}
+
+/*******SLIDER********/
+
+.reviews__slider {
+    height: 500px;
+    // overflow: hidden;
+
+    .slick-list {
+        overflow: visible;
+    }
+}
+
+.slick-arrow {
+    background: none;
+    text-indent: -999999px;
+    background: url(images/reviews/back.png) center / cover no-repeat;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+
+    &:enabled {
+        outline: none;
+    }
+}
+
+.slick-prev {
+    position: absolute;
+    left: -110px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999999999999;
+}
+
+.slick-next {
+    position: absolute;
+    right: -110px;
+    top: 50%;
+    transform: rotate(180deg) translateY(50%);
+    z-index: 999999999999;
 }
 
 /*************FOOTER************/
